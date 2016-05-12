@@ -1,7 +1,7 @@
 const tropowebapi = require('tropo-webapi');
 
 module.exports = {
-  test: (req, res, next) => {
+  testPost: (req, res, next) => {
     // req.addListener('data', (data) => {
     //   json = data.toString();
     // });
@@ -15,5 +15,13 @@ module.exports = {
     // if (initalText == "Yes") {
     //   trop.say("Awesome!");
     // }
+  },
+  testGet: (req, res, next) => {
+    
+    let tropo = new tripowebapi.TropoWebAPI();
+    tropo.say("Crime is happening!");
+    tropo.call("14156768361", null, null, null, null, null, "SMS", null, null, null);
+    res.send(tropowebapi.TropoJSON(tropo));
+
   }
 }
