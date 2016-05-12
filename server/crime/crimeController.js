@@ -1,4 +1,6 @@
 var Crime = require('./crimeModel.js');
+var fs = require('fs');
+var url = require('url');
 
 // var crimeTest = {};
 // crimeTest.type = "Murder";
@@ -30,6 +32,5 @@ module.exports = {
       res.status(400).send();
       next(err);
     });
-
   }
 }
