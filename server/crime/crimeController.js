@@ -30,6 +30,5 @@ module.exports = {
       res.status(400).send();
       next(err);
     });
-
   }
 }
