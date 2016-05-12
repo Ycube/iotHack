@@ -1,6 +1,4 @@
 var Crime = require('./crimeModel.js');
-var fs = require('fs');
-var url = require('url');
 
 // var crimeTest = {};
 // crimeTest.type = "Murder";
