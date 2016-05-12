@@ -11,6 +11,7 @@
     "mongoose": "^4.4.16",
     "q": "^1.4.1",
     "request-promise": "^3.0.0",
+    "tropo-webapi": "^1.2.0",
     "websocket": "^1.0.22"
   },
   "devDependencies": {},
